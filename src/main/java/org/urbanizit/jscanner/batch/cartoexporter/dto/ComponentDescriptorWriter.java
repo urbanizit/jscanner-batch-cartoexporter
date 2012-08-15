@@ -1,4 +1,4 @@
-package org.urbanizit.jscanner.batch.exporter.dto;
+package org.urbanizit.jscanner.batch.cartoexporter.dto;
 
 import java.io.File;
 import java.io.FileWriter;

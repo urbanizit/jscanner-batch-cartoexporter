@@ -1,4 +1,4 @@
-package org.urbanizit.jscanner.batch.exporter.dto;
+package org.urbanizit.jscanner.batch.cartoexporter.dto;
 
 import java.util.HashSet;
 import java.util.Set;
