@@ -4,27 +4,35 @@
 
 	<groupId>org.urbanizit</groupId>
 
-	<artifactId>exporter-batch</artifactId>
+	<artifactId>cartoexporter-batch</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>exporter-batch</name>
+	<name>cartoexport-batch</name>
+	
+	<properties>
+		<!-- most plugins should accept this -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>2.5.5</spring.version>
+		<spring.batch.version>1.1.0.RELEASE</spring.batch.version>
+		<jscanner.version>1.0.0-SNAPSHOT</jscanner.version>
+	</properties>
 	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.batch</groupId>
 			<artifactId>spring-batch-core</artifactId>
-			<version>1.1.0.RELEASE</version>
+			<version>${spring.batch.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.batch</groupId>
 			<artifactId>spring-batch-infrastructure</artifactId>
-			<version>1.1.0.RELEASE</version>
+			<version>${spring.batch.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring</artifactId>
-			<version>2.5.5</version>
+			<version>${spring.version}</version>
 		</dependency>
 
 		<dependency>
@@ -36,13 +44,13 @@
 		<dependency>
 			<groupId>org.urbanizit</groupId>
 			<artifactId>jscanner-analyser</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>${jscanner.version}</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.urbanizit</groupId>
 			<artifactId>jscanner-dto</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>${jscanner.version}</version>
 		</dependency>
 		
 		<dependency>
@@ -52,8 +60,7 @@
 			<scope>test</scope>
 		</dependency>	
 		
-		
-		
+				
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
@@ -88,8 +95,7 @@
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
-		</dependency>
-					
+		</dependency>					
 	</dependencies>
 
 	<build>
